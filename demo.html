@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./myscript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="myDIV"></div>
+    <script>
+        var para = document.createElement("P");               // Create a <p> element
+        para.innerText = "This is a paragraph";               // Insert text
+        document.body.appendChild(para);                      // Append <p> to <body>
+
+            var para2 = document.createElement("P");                 // Create a <p> element
+            para2.innerHTML = "This is a paragraph2!!!!!!!!!!";                // Insert text
+            document.getElementById("myDIV").appendChild(para2);     // Append <p> to <div> with id="myDIV"
+    </script>
+    
+    
+</body>
+</html>
